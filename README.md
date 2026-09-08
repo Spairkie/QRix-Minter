@@ -2,6 +2,8 @@
 
 A premium, privacy-first QR code and barcode studio that runs entirely in the browser.
 
+**Live app:** [spairkie.github.io/QRix-Minter](https://spairkie.github.io/QRix-Minter/)
+
 ## Highlights
 
 - QR Code, Code 128, UPC-A, and EAN-13 generation
@@ -35,4 +37,4 @@ Create a production build with `npm run build`.
 
 Camera/image decoding uses the browser's experimental Barcode Detection API and gracefully reports when it is unavailable. QRix maintains the recommended four-module quiet zone and defaults to high error correction when working with logos.
 
-Built for the portfolio of [Spairkie](https://github.com/Spairkie).
+Built by **Hans Sai**.

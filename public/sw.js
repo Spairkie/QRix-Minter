@@ -1,5 +1,5 @@
-const CACHE='qrix-v3';
-const ROOT='/Qrix-Minter/';
+const CACHE='qrix-v4';
+const ROOT='/QRix-Minter/';
 const CORE=[ROOT,`${ROOT}manifest.webmanifest`,`${ROOT}icon.svg`,`${ROOT}icon-192.png`,`${ROOT}icon-512.png`];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
