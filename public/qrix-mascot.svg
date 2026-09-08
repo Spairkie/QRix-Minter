@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="QRix mascot">
+  <defs>
+    <linearGradient id="body" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#fffaf4"/>
+      <stop offset="100%" stop-color="#dfc9b7"/>
+    </linearGradient>
+    <linearGradient id="visor" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#eafff4"/>
+      <stop offset="100%" stop-color="#78d9b0"/>
+    </linearGradient>
+    <linearGradient id="gadget" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#aeb8c6"/>
+    </linearGradient>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#101318" flood-opacity=".16"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="200" cy="339" rx="72" ry="12" fill="#101318" opacity=".10"/>
+
+  <g stroke="#c6ad98" stroke-width="7" stroke-linecap="round" fill="none">
+    <path d="M139 126 Q126 99 119 82"/>
+    <path d="M261 126 Q274 99 281 82"/>
+  </g>
+  <circle cx="117" cy="79" r="11" fill="#f0d8c3" stroke="#c6ad98" stroke-width="4"/>
+  <circle cx="283" cy="79" r="11" fill="#f0d8c3" stroke="#c6ad98" stroke-width="4"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="126" y="276" width="38" height="55" rx="19" fill="#c9b09a"/>
+    <rect x="236" y="276" width="38" height="55" rx="19" fill="#c9b09a"/>
+    <ellipse cx="145" cy="326" rx="25" ry="12" fill="#bda28c"/>
+    <ellipse cx="255" cy="326" rx="25" ry="12" fill="#bda28c"/>
+
+    <rect x="77" y="106" width="246" height="202" rx="103" fill="url(#body)" stroke="#cbb5a3" stroke-width="4"/>
+    <ellipse cx="200" cy="135" rx="88" ry="24" fill="#fff" opacity=".28"/>
+
+    <path d="M95 198 Q67 239 116 266" fill="none" stroke="#ead9ca" stroke-width="29" stroke-linecap="round"/>
+    <path d="M305 198 Q333 239 284 266" fill="none" stroke="#ead9ca" stroke-width="29" stroke-linecap="round"/>
+
+    <rect x="111" y="132" width="178" height="93" rx="46.5" fill="url(#visor)" stroke="#65b996" stroke-width="4"/>
+    <path d="M132 149 Q200 139 268 149" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".72"/>
+
+    <g fill="#203d34">
+      <ellipse cx="160" cy="176" rx="18" ry="20"/>
+      <ellipse cx="240" cy="176" rx="18" ry="20"/>
+    </g>
+    <g fill="#fff">
+      <circle cx="154" cy="168" r="7"/>
+      <circle cx="234" cy="168" r="7"/>
+      <circle cx="166" cy="183" r="3.4"/>
+      <circle cx="246" cy="183" r="3.4"/>
+    </g>
+    <path d="M188 195 Q200 208 212 195" fill="none" stroke="#203d34" stroke-width="4.5" stroke-linecap="round"/>
+    <ellipse cx="132" cy="194" rx="13" ry="7" fill="#ff8f92" opacity=".62"/>
+    <ellipse cx="268" cy="194" rx="13" ry="7" fill="#ff8f92" opacity=".62"/>
+
+    <circle cx="200" cy="263" r="46" fill="url(#gadget)" stroke="#9ca6b5" stroke-width="4"/>
+    <circle cx="200" cy="263" r="35" fill="#fff" opacity=".66"/>
+    <circle cx="200" cy="263" r="27" fill="#313944"/>
+    <g fill="#ff5b35">
+      <rect x="185" y="248" width="11" height="11" rx="3"/>
+      <rect x="204" y="248" width="11" height="11" rx="3"/>
+      <rect x="185" y="267" width="11" height="11" rx="3"/>
+      <rect x="204" y="267" width="11" height="11" rx="3"/>
+    </g>
+    <path d="M230 293 L253 316" stroke="#9ca6b5" stroke-width="16" stroke-linecap="round"/>
+
+    <circle cx="104" cy="257" r="14" fill="#f0ddcf"/>
+    <circle cx="296" cy="257" r="14" fill="#f0ddcf"/>
+  </g>
+
+  <g fill="#ffd166">
+    <path d="M67 117 Q79 117 79 105 Q79 117 91 117 Q79 117 79 129 Q79 117 67 117Z"/>
+    <path d="M306 89 Q313 89 313 82 Q313 89 320 89 Q313 89 313 96 Q313 89 306 89Z"/>
+    <circle cx="330" cy="142" r="5"/>
+  </g>
+</svg>
