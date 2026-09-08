@@ -1,0 +1,140 @@
+/* Final QRix polish: install-button alignment, mascot, and generative hero card. */
+
+/* The shared header rule turns every action into a grid. Once install-head switches
+   to flex, place-items no longer centers its contents consistently across engines. */
+.header-actions .install-head{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:7px!important;
+  line-height:1!important;
+  white-space:nowrap;
+  vertical-align:middle;
+}
+.header-actions .install-head svg{
+  display:block!important;
+  width:14px!important;
+  height:14px!important;
+  min-width:14px!important;
+  flex:0 0 14px!important;
+  margin:0!important;
+  position:static!important;
+  transform:none!important;
+}
+
+/* Replace the old four-dot spark with the QRix mascot while keeping the same
+   semantic, aria-hidden inline slot used throughout the interface. */
+.qrix-spark{
+  display:inline-block!important;
+  width:28px!important;
+  height:28px!important;
+  min-width:28px!important;
+  flex:0 0 28px!important;
+  border-radius:0!important;
+  background:url('/QRix-Minter/qrix-mascot.svg') center/contain no-repeat!important;
+  transform:none!important;
+  filter:drop-shadow(0 4px 8px rgba(16,19,24,.14));
+}
+.qrix-spark i{display:none!important}
+.eyebrow .qrix-spark{
+  animation:qrix-mascot-bob 3.8s ease-in-out infinite!important;
+}
+.batch-foot .qrix-spark{
+  width:23px!important;
+  height:23px!important;
+  min-width:23px!important;
+  flex-basis:23px!important;
+  filter:drop-shadow(0 3px 6px rgba(16,19,24,.15));
+}
+html[data-theme=dark] .qrix-spark{
+  filter:drop-shadow(0 5px 11px rgba(0,0,0,.38)) saturate(1.04) brightness(1.04);
+}
+
+/* Each landing render receives a fresh QR-like matrix plus tiny randomized card
+   parameters. The fixed finder zones keep it visually legible as a QR motif. */
+.landing-hero .mint-card[data-qrix-generated]{
+  --mint-tilt:5deg;
+  --mint-lift:12px;
+  --mint-speed:5.2s;
+  --mint-radius:9%;
+  border-radius:var(--mint-radius)!important;
+  transform:rotate(var(--mint-tilt))!important;
+  animation:qrix-card-float var(--mint-speed) ease-in-out infinite!important;
+  box-shadow:0 38px 100px rgba(0,0,0,.25),0 0 0 1px rgba(16,19,24,.035);
+}
+.landing-hero .mint-card[data-qrix-generated] .mini-qr{
+  gap:2.8%;
+}
+.landing-hero .mint-card[data-qrix-generated] .mini-qr i{
+  border-radius:var(--mint-cell-radius,1px);
+  transition:opacity .22s ease,transform .22s ease,background-color .22s ease;
+}
+.landing-hero .mint-card[data-qrix-generated] .mini-qr i.on{
+  background:#101318!important;
+}
+.landing-hero .mint-card[data-qrix-generated]:before{
+  content:"";
+  position:absolute;
+  width:22%;
+  aspect-ratio:1;
+  right:-4%;
+  top:-4%;
+  border-radius:50%;
+  background:radial-gradient(circle at 35% 35%,#fff5dc 0 14%,#ffd166 15% 42%,#ff5b35 43% 100%);
+  box-shadow:0 10px 24px rgba(255,91,53,.20);
+  opacity:.92;
+}
+.landing-hero .mint-card[data-qrix-generated]:after{
+  content:"";
+  position:absolute;
+  width:8%;
+  aspect-ratio:1;
+  left:7%;
+  bottom:6%;
+  border-radius:50%;
+  background:#78d9b0;
+  box-shadow:14px 7px 0 -2px #ffd166;
+  opacity:.85;
+}
+
+@keyframes qrix-mascot-bob{
+  0%,100%{transform:translateY(0) rotate(-2deg) scale(.96)}
+  50%{transform:translateY(-2px) rotate(2deg) scale(1.04)}
+}
+@keyframes qrix-card-float{
+  0%,100%{transform:rotate(var(--mint-tilt)) translateY(0)}
+  50%{transform:rotate(calc(var(--mint-tilt) - 1.5deg)) translateY(calc(var(--mint-lift) * -1))}
+}
+
+@media(hover:hover) and (pointer:fine){
+  .hero-art:hover .mint-card[data-qrix-generated]{
+    animation-play-state:paused!important;
+    transform:rotate(calc(var(--mint-tilt) - 1deg)) translateY(-4px)!important;
+  }
+}
+
+@media(max-width:560px){
+  .header-actions .install-head{
+    width:40px!important;
+    height:40px!important;
+    padding:0!important;
+    gap:0!important;
+  }
+  .header-actions .install-head svg{
+    width:17px!important;
+    height:17px!important;
+    min-width:17px!important;
+    flex-basis:17px!important;
+  }
+  .qrix-spark{
+    width:25px!important;
+    height:25px!important;
+    min-width:25px!important;
+    flex-basis:25px!important;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .eyebrow .qrix-spark,
+  .landing-hero .mint-card[data-qrix-generated]{animation:none!important}
+}
