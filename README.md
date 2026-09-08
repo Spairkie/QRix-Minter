@@ -13,7 +13,7 @@ A premium, privacy-first QR code and barcode studio that runs entirely in the br
 - Batch import by paste, CSV/TXT upload, or drag and drop
 - ZIP export and Avery 5160-friendly print sheets
 - Browser-native image scanning where `BarcodeDetector` is available
-- History, favorites, usage statistics, comparison mode, undo/redo, and keyboard shortcuts
+- Automatic draft recovery, history, favorites, usage statistics, comparison mode, undo/redo, and keyboard shortcuts
 - Responsive light/dark interface; all payloads stay on device
 
 ## Run locally
