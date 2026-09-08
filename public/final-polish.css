@@ -72,18 +72,6 @@ html[data-theme=dark] .qrix-spark{
 .landing-hero .mint-card[data-qrix-generated] .mini-qr i.on{
   background:#101318!important;
 }
-.landing-hero .mint-card[data-qrix-generated]:before{
-  content:"";
-  position:absolute;
-  width:22%;
-  aspect-ratio:1;
-  right:-4%;
-  top:-4%;
-  border-radius:50%;
-  background:radial-gradient(circle at 35% 35%,#fff5dc 0 14%,#ffd166 15% 42%,#ff5b35 43% 100%);
-  box-shadow:0 10px 24px rgba(255,91,53,.20);
-  opacity:.92;
-}
 .landing-hero .mint-card[data-qrix-generated]:after{
   content:"";
   position:absolute;
