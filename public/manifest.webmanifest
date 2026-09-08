@@ -1,0 +1,20 @@
+{
+  "id": "/Qrix-Minter/",
+  "name": "QRix Minter",
+  "short_name": "QRix",
+  "description": "Create private, production-ready QR codes and barcodes on any device.",
+  "start_url": "/Qrix-Minter/#studio",
+  "scope": "/Qrix-Minter/",
+  "display": "standalone",
+  "background_color": "#080b0d",
+  "theme_color": "#080b0d",
+  "orientation": "any",
+  "categories": ["utilities", "productivity", "design"],
+  "icons": [
+    {"src":"icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  ],
+  "shortcuts": [
+    {"name":"Create a code","short_name":"Create","url":"/Qrix-Minter/#studio","icons":[{"src":"icon-192.png","sizes":"192x192"}]}
+  ]
+}
