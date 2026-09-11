@@ -2,7 +2,7 @@
 
 A premium, privacy-first QR code and barcode studio that runs entirely in the browser.
 
-**Live app:** [spairkie.github.io/QRix-Minter](https://spairkie.github.io/QRix-Minter/)
+**Live app:** [builtbysai.github.io/QRix-Minter](https://builtbysai.github.io/QRix-Minter/)
 
 ## Highlights
 
