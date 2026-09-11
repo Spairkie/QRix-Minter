@@ -4,6 +4,10 @@ A premium, privacy-first QR code and barcode studio that runs entirely in the br
 
 **Live app:** [builtbysai.github.io/QRix-Minter](https://builtbysai.github.io/QRix-Minter/)
 
+<p align="center"><img src="assets/hero.svg" width="800" alt="QRix Minter: privacy-first QR and barcode studio that runs entirely in the browser"></p>
+
+<p align="center"><img src="assets/studio-preview.png" width="800" alt="Screenshot of the live QRix Minter studio with a freshly generated QR code"></p>
+
 ## Highlights
 
 - QR Code, Code 128, UPC-A, and EAN-13 generation
